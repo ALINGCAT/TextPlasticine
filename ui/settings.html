@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>设置</title>
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <div class="panel">
+    <h2>设置</h2>
+    <div class="row">
+      <label for="dark-toggle">夜间模式</label>
+      <label class="switch">
+        <input type="checkbox" id="dark-toggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <label for="silent-toggle">静默启动</label>
+      <label class="switch">
+        <input type="checkbox" id="silent-toggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <label for="autostart-toggle">开机启动</label>
+      <label class="switch">
+        <input type="checkbox" id="autostart-toggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="row">
+      <label for="hotkey-input">显隐编辑框</label>
+      <input id="hotkey-input" readonly placeholder="按下新快捷键" />
+    </div>
+    <div class="row">
+      <label for="mark-input">标记框状态</label>
+      <input id="mark-input" readonly placeholder="按下新快捷键" />
+    </div>
+    <div class="row">
+      <label for="restore-input">恢复框状态</label>
+      <input id="restore-input" readonly placeholder="按下新快捷键" />
+    </div>
+    <div id="msg"></div>
+    <button id="reset">恢复默认</button>
+  </div>
+  <script src="settings.js"></script>
+</body>
+</html>
